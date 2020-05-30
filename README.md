@@ -4,7 +4,7 @@
 
 ## Install dependancies 
 
-Run `npm install` for installing npm dependacies before starting or running app localy
+Run `npm install` for installing npm dependancies before starting or running app.
 
 ## Development server
 
