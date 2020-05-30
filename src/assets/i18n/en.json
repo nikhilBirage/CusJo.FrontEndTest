@@ -1,0 +1,28 @@
+{
+    "title": "Front End Test",
+    "language_lable": "Language",
+    "feature_one": {
+        "title1": "Title 1",
+        "title2": "Title 2",
+        "title3": "Title 3",
+        "title4": "Title 4",
+        "title5": "Title 5"
+    },
+    "feature_two": {
+        "paragraph": "On July 16, 1969, the Apollo 11 spacecraft launched from the Kennedy Space Center in Florida. Its mission was to go where no human being had gone before—the moon! The crew consisted of Neil Armstrong, Michael Collins, and Buzz Aldrin. The spacecraft landed on the moon in the Sea of Tranquility, a basaltic flood plain, on July 20, 1969. The moonwalk took place the following day. On July 21, 1969, at precisely 10: 56 EDT, Commander Neil Armstrong emerged from the Lunar Module and took his famous first step onto the moon’s surface. He declared, “That’s one small step for man, one giant leap for mankind.” It was a monumental moment in human history!"
+    },
+    "feature_three": {
+        "text": "Normal Text"
+    },
+    "feature_four": {
+        "link1_text": "Link for angular",
+        "link2_text": "Link for google"
+    },
+    "style_button_lable": "style tools",
+    "fonts_lable": "fonts",
+    "info_style": "By using this tools you can change font, text color and font styles.",
+    "info_lang": "By using this you can change language.",
+    "english": "English",
+    "hindi": "Hindi",
+    "chinese": "Chinese"
+}

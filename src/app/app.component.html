@@ -1,0 +1,136 @@
+<div fxLayout="column">
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <label class="header-label">{{'title' | translate }}</label>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="end start" class="full-width">
+    <button mat-icon-button matTooltip="{{'info_lang' | translate}}" matTooltipPosition="left">
+      <mat-icon>info</mat-icon>
+    </button>
+    <mat-form-field>
+      <mat-label>{{'language_lable' | translate }}</mat-label>
+      <mat-select [(ngModel)]="currentLang" (ngModelChange)="changeLanguage($event)">
+        <mat-option *ngFor="let lang of languages" [value]="lang.value">
+          {{lang.viewValue | translate}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div fxLayout="row" id="featureOne" class="feature-common full-width">
+    <div fxFlex="80" fxLayout="column" fxLayoutAlign="start start" [style.color]="features[0].colorValue"
+      [style.text-decoration]="features[0].textDecoration">
+      <h1 [style.font-weight]="features[0].fontWeight" [style.font-style]="features[0].fontStyle">
+        {{'feature_one.title1' | translate }}</h1>
+      <h2 [style.font-weight]="features[0].fontWeight" [style.font-style]="features[0].fontStyle">
+        {{'feature_one.title2' | translate }}</h2>
+      <h3 [style.font-weight]="features[0].fontWeight" [style.font-style]="features[0].fontStyle">
+        {{'feature_one.title3' | translate }}</h3>
+      <h4 [style.font-weight]="features[0].fontWeight" [style.font-style]="features[0].fontStyle">
+        {{'feature_one.title4' | translate }}</h4>
+      <h5 [style.font-weight]="features[0].fontWeight" [style.font-style]="features[0].fontStyle">
+        {{'feature_one.title5' | translate }}</h5>
+    </div>
+    <div fxFlex="20" fxLayout="column" fxLayoutAlign="start end">
+      <div fxLayout="row">
+        <button mat-icon-button matTooltip="{{'info_style' | translate}}" matTooltipPosition="left">
+          <mat-icon>info</mat-icon>
+        </button>
+        <button mat-raised-button
+          (click)="features[0].isVisible = !features[0].isVisible">{{'style_button_lable' | translate }}</button>
+      </div>
+      <div class="tooltip-over" *ngIf="features[0].isVisible">
+        <ng-container *ngTemplateOutlet="toolbar;context:{feature:features[0]}">
+        </ng-container>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="row" id="featureTwo" class="feature-common featureTwo full-width">
+    <div fxFlex="80 1 0" class="full-width" fxLayout="column" fxLayoutAlign="start start">
+      <p [style.color]="features[1].colorValue" [style.font-size.px]="features[1].textFontSize"
+        [style.font-weight]="features[1].fontWeight" [style.font-style]="features[1].fontStyle"
+        [style.text-decoration]="features[1].textDecoration">
+        {{'feature_two.paragraph' | translate }}</p>
+    </div>
+    <div fxFlex="20 1 0" class="full-width" fxLayout="column" fxLayoutAlign="start end">
+      <div fxLayout="row">
+        <button mat-icon-button matTooltip="{{'info_style' | translate}}" matTooltipPosition="left">
+          <mat-icon>info</mat-icon>
+        </button>
+        <button mat-raised-button
+          (click)="features[1].isVisible = !features[1].isVisible">{{'style_button_lable' | translate }}</button>
+      </div>
+      <div class="tooltip-over" *ngIf="features[1].isVisible">
+        <ng-container *ngTemplateOutlet="toolbar;context:{feature:features[1]}">
+        </ng-container>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="row" id="featureThree" class="feature-common featureThree full-width">
+    <div fxFlex="80" fxLayout="column" fxLayoutAlign="start start" [style.color]="features[2].colorValue"
+      [style.font-size.px]="features[2].textFontSize" [style.font-weight]="features[2].fontWeight"
+      [style.font-style]="features[2].fontStyle" [style.text-decoration]="features[2].textDecoration">
+      {{'feature_three.text' | translate }}
+    </div>
+    <div fxFlex="20" fxLayout="column" fxLayoutAlign="start end">
+      <div fxLayout="row">
+        <button mat-icon-button matTooltip="{{'info_style' | translate}}" matTooltipPosition="left">
+          <mat-icon>info</mat-icon>
+        </button>
+        <button mat-raised-button
+          (click)="features[2].isVisible = !features[2].isVisible">{{'style_button_lable' | translate }}</button>
+      </div>
+      <div class="tooltip-over" *ngIf="features[2].isVisible">
+        <ng-container *ngTemplateOutlet="toolbar;context:{feature:features[2]}">
+        </ng-container>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="row" id="featureFour" class="feature-common featureFour full-width">
+    <div fxFlex="80" fxLayout="column" fxLayoutAlign="start start" [style.font-size.px]="features[3].textFontSize"
+      [style.font-weight]="features[3].fontWeight" [style.font-style]="features[3].fontStyle"
+      [style.text-decoration]="features[3].textDecoration">
+      <div [style.color]="features[3].colorValue">
+        <a href="https://angular.io/">{{'feature_four.link1_text' | translate }}</a>
+      </div>
+      <div [style.color]="features[3].colorValue">
+        <a href="https://google.co.in/">{{'feature_four.link2_text' | translate }}</a>
+      </div>
+    </div>
+    <div fxFlex="20" fxLayout="column" fxLayoutAlign="start end">
+      <div fxLayout="row">
+        <button mat-icon-button matTooltip="{{'info_style' | translate}}" matTooltipPosition="left">
+          <mat-icon>info</mat-icon>
+        </button>
+        <button mat-raised-button
+          (click)="features[3].isVisible = !features[3].isVisible">{{'style_button_lable' | translate }}</button>
+      </div>
+      <div class="tooltip-over" *ngIf="features[3].isVisible">
+        <ng-container *ngTemplateOutlet="toolbar;context:{feature:features[3]}">
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #toolbar let-feature="feature">
+  <div fxLayout="column" class="toolbar" fxLayoutAlign="start center">
+    <div class="select-container" fxLayout="row" fxLayoutGap="10">
+      <div *ngIf="feature.id !== 'one'">
+        <mat-form-field>
+          <mat-label>{{'fonts_lable' | translate }}</mat-label>
+          <mat-select [(ngModel)]="feature.textFontSize">
+            <mat-option *ngFor="let font of fonts" [value]="font.value">
+              {{font.viewValue}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="start center">
+        <input type="color" [(ngModel)]="feature.colorValue" id="colorpicker" />
+      </div>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-between start" class="style-container">
+      <button mat-icon-button *ngFor="let style of feature.styles" (click)="onStyleClicked(style, feature.id)"
+        [ngClass]="setClass(style)">
+        {{style.value}}
+      </button>
+    </div>
+  </div>
+</ng-template>

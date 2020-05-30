@@ -1,0 +1,66 @@
+.full-width {
+    width: 100% !important;
+}
+
+.toolbar {
+    border: solid black 2px;
+    padding: 5px;
+}
+
+.style-container {
+    height: 100%;
+    width: 200px !important;
+}
+
+.select-container mat-form-field {
+    width: 80px;
+}
+
+.style-selected {
+    background-color: chartreuse;
+}
+.style-not-selected {
+    background-color: white;
+}
+
+.italic {
+    font-style: italic;
+    font-family: cursive;
+}
+
+.bold {
+    font-style: normal;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.underline {
+    text-underline-position: below;
+    text-decoration: underline;
+    font-family: cursive;
+}
+
+/////////////////////////////////////////////
+.feature-common {
+    padding: 20px;
+    border: solid 2px black;
+}
+
+.featureTwo {
+    word-spacing: 5px;
+    line-height: 2;
+}
+
+.featureThree {
+    line-height: 1;
+    height: 300px;
+}
+
+.featureFour {
+    line-height: 3;
+    height: 200px;
+}
+
+.header-label {
+    font-size: 30px;
+}
